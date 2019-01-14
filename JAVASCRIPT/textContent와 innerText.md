@@ -35,15 +35,15 @@ span.innerHTML = "1<br>2<br>3<br>4\n5\n6\n7\n8";
 ```
 - span.textContent
 1234
-5
-6
-7
-8 
+5   
+6   
+7   
+8    
 
 - span.innerText
-1
-2
-3
+1   
+2   
+3   
 4 5 6 7 8
 
 #### 기타
