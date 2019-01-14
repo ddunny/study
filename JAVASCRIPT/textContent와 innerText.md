@@ -34,7 +34,7 @@ var span = document.querySelector('span');
 span.innerHTML = "1<br>2<br>3<br>4\n5\n6\n7\n8";
 ```
 - span.textContent   
-1234
+1234   
 5   
 6   
 7   
@@ -44,7 +44,7 @@ span.innerHTML = "1<br>2<br>3<br>4\n5\n6\n7\n8";
 1   
 2   
 3   
-4 5 6 7 8
+4 5 6 7 8   
 
 #### 기타
 - textContent를 사용하면 XSS(크로스 사이트 스크립팅) 공격을 방지할 수 있다.
