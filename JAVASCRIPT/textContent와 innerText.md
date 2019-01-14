@@ -33,14 +33,14 @@ textContent vs innerText
 var span = document.querySelector('span');
 span.innerHTML = "1<br>2<br>3<br>4\n5\n6\n7\n8";
 ```
-- span.textContent
+- span.textContent   
 1234
 5   
 6   
 7   
 8    
 
-- span.innerText
+- span.innerText   
 1   
 2   
 3   
