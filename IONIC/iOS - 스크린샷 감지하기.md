@@ -19,11 +19,11 @@ iOS - 스크린샷 감지하기
 ```typescript
 //..
 
-ngOnInit() {
+ngOnInit(): void {
 this.detectedScreenshot = this.detectedScreenshot.bind(this);
 }
 
-ionViewDidLoad() {
+ionViewDidLoad(): void {
     this.platform.ready().then(()=>{
         if (this.platform.is('ios')) {
             document.addEventListener('active', this.detectedScreenshot, false);
@@ -33,10 +33,10 @@ ionViewDidLoad() {
 
 //..
 
-detectedScreenshot() {
-    window.alert("Screenshot");
+detectedScreenshot(): void {
+    window.alert("스크린샷 감지");
 }
 ```
 
 스크린샷이 발생했을 때 `원하는 동작`을 수행할 수 있습니다.   
-`원하는 동작`은 스크린샷이 사진첩에 저장된 이후에 발생합니다.
+`원하는 동작`은 스크린샷이 사진첩에 저장된 *이후*에 발생합니다.
