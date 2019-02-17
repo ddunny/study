@@ -59,7 +59,6 @@ int BFS() {
 int main(void) {
 	cin >> M >> N;
 	bool check_tomato = false;
-	bool start_tomato = false;
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < M; j++) {
 			cin >> box[i][j];
@@ -71,9 +70,6 @@ int main(void) {
 			}
 			else if (box[i][j] == COMPLETE) {
 				path.push({ i, j });
-				if (!start_tomato) {
-					start_tomato = true;
-				}
 			}
 		}
 	}
