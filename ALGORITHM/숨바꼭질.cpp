@@ -1,6 +1,6 @@
 /*
 * 숨바꼭질 BFS
-* https://www.acmicpc.net/problem/7576
+* https://www.acmicpc.net/problem/1697
 * 고려해야 할 사항
 * 1. DFS로 풀면 스택오버 플로우 발생
 * 2. BFS 자체가 최단거리를 측정하는 것이기 때문에, time에 저장되는 값은 최단시간임
@@ -13,7 +13,7 @@
 using namespace std;
 
 int N, K;
-int visited[1000001];
+int visited[100001];
 
 struct info {
 	int time, position;
@@ -34,7 +34,7 @@ void BFS() {
 			break;
 		}
 
-		if (position + 1 < 1000000 && !visited[position + 1]) {
+		if (position + 1 <= 100000 && !visited[position + 1]) {
 			q.push({ cnt + 1, position + 1 });
 			visited[position + 1]++;
 		}
@@ -44,7 +44,7 @@ void BFS() {
 			visited[position - 1]++;
 		}
 
-		if (position * 2 < 1000000 && !visited[position * 2]) {
+		if (position * 2 <= 100000 && !visited[position * 2]) {
 			q.push({ cnt + 1, position * 2 });
 			visited[position * 2]++;
 		}
