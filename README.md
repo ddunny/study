@@ -20,4 +20,5 @@
 
 ## 알고리즘
 - [미로탐색](https://github.com/ddunny/memo/blob/master/ALGORITHM/%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.cpp)
-- [토마토](https://github.com/ddunny/memo/blob/master/ALGORITHM/%ED%86%A0%EB%A7%88%ED%86%A0.cpp)    
+- [토마토](https://github.com/ddunny/memo/blob/master/ALGORITHM/%ED%86%A0%EB%A7%88%ED%86%A0.cpp)  
+- [숨바꼭질](https://github.com/ddunny/memo/blob/master/ALGORITHM/%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.cpp)   
