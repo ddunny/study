@@ -80,7 +80,7 @@ void injectVirus() { // 바이러스를 퍼트리는 것 : BFS
 	}
 }
 
-void setWall(int Y, int X, int install) { // 벽을 세우는 방법: DFS
+void setWall(int Y, int install) { // 벽을 세우는 방법: DFS
 
 	// 새로 세울 수 있는 벽의 개수는 3개이며, 꼭 3개를 세워야 한다.
 
