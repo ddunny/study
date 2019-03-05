@@ -26,11 +26,7 @@ void search(int person) {
 		return;
 	}
 
-	if (100 == result) { //100보다 크면 더 볼 필요도 없음
-		return;
-	}
-
-	if (100 < result) { //100보다 크면 더 볼 필요도 없음
+	if (100 <= result) { //100보다 크면 더 볼 필요도 없음
 		return;
 	}
 
