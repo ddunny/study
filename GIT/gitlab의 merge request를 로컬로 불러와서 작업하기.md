@@ -26,8 +26,8 @@ $git push
 
 ---
 ## 또 다른 방법
-> git fetch origin을 할 때 GitLab 저장소에 존재하는 머지리퀘스트를 함께 fetch 할 수 있도록 config에 설정을 추가해줄 수 있습니다.   
-> *원격에 존재하는 Merge Request가 많을수록 `git fetch origin`의 실행속도가 느려진다는 단점이 있습니다.*
+> `$git fetch origin`을 할 때 GitLab 저장소에 존재하는 머지리퀘스트를 함께 fetch 할 수 있도록 config에 설정을 추가해줄 수 있습니다.   
+> *원격에 존재하는 Merge Request가 많을수록 `$git fetch origin`의 실행속도가 느려진다는 단점이 있습니다.*
 
 **Locate the section for your GitLab remote in the `.git/config` file. It looks like this:**
 
