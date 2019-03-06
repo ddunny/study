@@ -7,7 +7,7 @@
 > 지금까지 저장한 내용들입니다 👍
 
 ## IONIC (하이브리드앱)
-- [인앱브라우저 안의 SELECT BOX 옵션 보이게 하기](https://github.com/ddunny/memo/blob/master/IONIC/%EC%9D%B8%EC%95%B1%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%95%88%EC%9D%98%20SELECT%20BOX%20%EC%98%B5%EC%85%98%20%EB%B3%B4%EC%9D%B4%EA%B2%8C%20%ED%95%98%EA%B8%B0.md){target="_blank"}
+- [인앱브라우저 안의 SELECT BOX 옵션 보이게 하기](https://github.com/ddunny/memo/blob/master/IONIC/%EC%9D%B8%EC%95%B1%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%95%88%EC%9D%98%20SELECT%20BOX%20%EC%98%B5%EC%85%98%20%EB%B3%B4%EC%9D%B4%EA%B2%8C%20%ED%95%98%EA%B8%B0.md){:target="_blank"}
 - [iOS - 스크린샷 감지하기](https://github.com/ddunny/memo/blob/master/IONIC/iOS%20-%20%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EA%B0%90%EC%A7%80%ED%95%98%EA%B8%B0.md){target="_blank"}
 - [ionic serve refresh error 해결하기](https://github.com/ddunny/memo/blob/master/IONIC/ionic%20serve%20refresh%20error%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md){target="_blank"}   
 - [IONIC CLI로 앱 실행해보기](https://github.com/ddunny/memo/blob/master/IONIC/IONIC%20CLI%EB%A1%9C%20%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0.md){target="_blank"}   
