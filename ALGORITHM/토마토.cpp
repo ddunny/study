@@ -1,6 +1,7 @@
 /*
 * 토마토 BFS
 * https://www.acmicpc.net/problem/7576
+*
 * 고려해야 할 사항
 * 1. 이미 모두 익었을 경우
 * 2. 모두 익을 수 없는 경우

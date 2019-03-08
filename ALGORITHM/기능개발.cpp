@@ -1,7 +1,6 @@
 /*
-* https://programmers.co.kr/learn/courses/30/lessons/42586
-*
 * 기능개발
+* https://programmers.co.kr/learn/courses/30/lessons/42586
 *
 * 생각해 볼 사항
 * 1. 스택/큐 풀이로 아래가 옳은 것인가?
