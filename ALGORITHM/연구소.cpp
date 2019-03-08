@@ -1,7 +1,6 @@
 /*
-* https://www.acmicpc.net/problem/14502
-*
 * 연구소 BFS, DFS
+* https://www.acmicpc.net/problem/14502
 *
 * @ddunny
 */
@@ -100,7 +99,7 @@ void setWall(int Y, int install) { // 벽을 세우는 방법: DFS
 			if (map[i][j] == EMPTY) {
 				map[i][j] = WALL; // 벽을 하나 세워봅니다.
 				secure--; //빈 공간에 벽이 세워졌기 때문에 감소
-				setWall(i, j, install + 1); //탐색할 i와 j를 보내고.. 벽은 윗줄에서 세웠으니깐, 1개 추가된 값으로 전달.
+				setWall(i, install + 1); //탐색할 i와 j를 보내고.. 벽은 윗줄에서 세웠으니깐, 1개 추가된 값으로 전달.
 				map[i][j] = EMPTY; //세워봤던거 제거
 				secure++; //벽이 사라진 공간은 다시 안전한 공간
 			}
@@ -120,7 +119,7 @@ int main(void) {
 		}
 	}
 
-	setWall(0, 0, 0);
+	setWall(0, 0);
 
 	cout << maxsecure << endl;
 	return 0;
