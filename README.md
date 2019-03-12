@@ -23,7 +23,10 @@
 ## 알고리즘
 - [미로탐색](https://github.com/ddunny/memo/blob/master/ALGORITHM/%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.cpp)   
 - [토마토](https://github.com/ddunny/memo/blob/master/ALGORITHM/%ED%86%A0%EB%A7%88%ED%86%A0.cpp)     
-- [숨바꼭질](https://github.com/ddunny/memo/blob/master/ALGORITHM/%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.cpp)      
+- [숨바꼭질](https://github.com/ddunny/memo/blob/master/ALGORITHM/%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.cpp)   
+- [연구소](https://github.com/ddunny/memo/blob/master/ALGORITHM/%EC%97%B0%EA%B5%AC%EC%86%8C.cpp)   
+- [일곱 난쟁이](https://github.com/ddunny/memo/blob/master/ALGORITHM/%EC%9D%BC%EA%B3%B1%20%EB%82%9C%EC%9F%81%EC%9D%B4.cpp)   
+- [기능개발](https://github.com/ddunny/memo/blob/master/ALGORITHM/%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C.cpp)   
 
 ## git
 - [merge request 로컬에서 작업하기](https://github.com/ddunny/memo/blob/master/GIT/gitlab%EC%9D%98%20merge%20request%EB%A5%BC%20%EB%A1%9C%EC%BB%AC%EB%A1%9C%20%EB%B6%88%EB%9F%AC%EC%99%80%EC%84%9C%20%EC%9E%91%EC%97%85%ED%95%98%EA%B8%B0.md)     
