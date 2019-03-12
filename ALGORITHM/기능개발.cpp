@@ -1,76 +1,45 @@
+//queue 사용한 것으로 코드 수정 (선호풀이 참고)
+
 /*
-* 기능개발
 * https://programmers.co.kr/learn/courses/30/lessons/42586
 *
-* 생각해 볼 사항
-* 1. 스택/큐 풀이로 아래가 옳은 것인가?
+* 기능개발
 *
 * @ddunny
 */
 
 #include <string>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
 vector<int> solution(vector<int> progresses, vector<int> speeds) {
-    vector<int> answer, count_time, setting;
-    
-    for (int i = 0; i < progresses.size() ; i++) {
-        setting.push_back(100 - progresses.at(i));
-        count_time.push_back(0);
-    }
-    
-    bool isend = false;
-    int checkend = 0;
-    while(!isend) {
-        for (int i = 0; i < progresses.size() ; i++) {
-            if (progresses.at(i) == -1) {
-                continue;
-            }
-            
-            int leftvalue = setting.at(i) - speeds.at(i);
-            if (leftvalue >= 0) { // 잔여업무가 있음
-                 count_time.at(i) += 1;
-                if (leftvalue == 0) { // 완료
-                    progresses.at(i) = -1;
-                    checkend++;
-                } else {
-                    setting.at(i) = leftvalue;
-                }
-            } else {
-                if (setting.at(i) > 0) { // 잔여진도가 speeds보다 적은 경우 (완료)
-                    count_time.at(i) += 1;
-                    progresses.at(i) = -1;
-                    checkend++;
-                }
-            }
-            
-            if (checkend == progresses.size()) {
-                isend = true;
-                break;
-            }
-        }
-    }
-    
-    int max = 0;
-    int count_release = 1;
-    for (int i = 0; i < progresses.size() ; i++) {
-        if (i == 0) {
-            answer.push_back(count_release);
-            max = count_time.at(i);
-            continue;
-        }
+    vector<int> answer;
+    queue<int> setting;
 
-        if (max < count_time.at(i)) {
-            count_release = 1;
-            max = count_time.at(i);
-            answer.push_back(count_release);
-        } else {
-            count_release++;
-            answer.at(answer.size() - 1) = count_release;
-        }
+    for (int i = 0;  i < progresses.size(); i++) {
+        int remain_work = (100  - progresses.at(i)) / speeds.at(i);
+        int remain_work2 = (100  - progresses.at(i)) % speeds.at(i);
+        
+        if (remain_work2) // 남은 업무가 있는 경우
+            remain_work += 1;
+        
+        setting.push(remain_work);
     }
     
+    while(!setting.empty()) {
+        int front_work = setting.front();
+        setting.pop();
+        int count = 1;
+        while(!setting.empty()) {
+            int next_work  = setting.front();
+            if (front_work < next_work) 
+                break;
+            count += 1;
+            setting.pop();
+        }
+        answer.push_back(count);
+    }
     return answer;
 }
