@@ -1,3 +1,15 @@
+/*
+* 크로아티아 알파벳
+* https://www.acmicpc.net/problem/2941
+*
+* 고려해야 하는 상황
+* 1. 동일한 패턴이 여러번 나올 경우
+* 2. dz=, z= 겹치지 않게 잘 카운팅
+* 3. 패턴을 체크할 때는 패턴의 길이만큼 문자열에 들어있는지 확인해야 함
+* 4. 체크가 완료된 것은 다시 체크하지 않기 위해 배열을 이용 
+*
+* @ddunny
+*/
 #include <iostream>
 #include  <string>
 #include <vector>
