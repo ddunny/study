@@ -10,3 +10,43 @@
 *       - 전전계단을(n-2) 밟음
 * @ddunny
 */
+#include <iostream>
+using namespace std;
+
+int stair[301] = { 0, };
+int memo[301] = { 0, };
+
+int max(int a, int b) {
+	int value;
+	return value = (a >= b) ? a : b;
+}
+
+int dp(int n) { // n : 마지막 계단
+	if (n <= 1) {
+		return memo[n];
+	}
+
+	if (n == 2) {
+		return memo[n] = max(stair[n], stair[n - 1] + stair[n]); //2번째 칸에는 메모를 체크할 게 없음 (전전계단이 없음)
+	}
+
+	if (memo[n] > 0) { //없으면 시간초과
+		return memo[n];
+	}
+	return memo[n] = max(dp(n - 2) + stair[n], dp(n - 3) + stair[n - 1] + stair[n]);
+}
+
+int main() {
+	int N;
+	cin >> N;
+	for (int i = 1; i <= N; i++) {
+		cin >> stair[i];
+		if (i == 1)
+			memo[i] = stair[i];
+	}
+
+	dp(N);
+
+	cout << memo[N];
+	return 0;
+}
