@@ -1,9 +1,8 @@
-//queue 사용한 것으로 코드 수정 (선호풀이 참고)
-
 /*
+* queue 사용한 것으로 코드 수정 (선호풀이 참고)
+* 기능개발
 * https://programmers.co.kr/learn/courses/30/lessons/42586
 *
-* 기능개발
 *
 * @ddunny
 */
