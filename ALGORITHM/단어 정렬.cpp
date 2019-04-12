@@ -4,17 +4,7 @@
 #include <algorithm> //sort, unique
 using namespace std;
 
-string arr[20000];
-
-struct info
-{
-	int idx, ascii, size;
-};
-
 vector<string> information;
-vector<info> temp;
-
-// 아스키코드 소문자 a~z : 141~172
 
 bool compareSize(string a, string b) {
 	
