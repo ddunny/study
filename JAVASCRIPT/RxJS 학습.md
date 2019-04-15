@@ -1,8 +1,8 @@
 RxJS
 ============
-> 참고 사이트는 연결링크&기재한 링크로 확인하실 수 있습니다.
+> 참고 사이트는 연결링크와 기재한 링크로 확인하실 수 있습니다.
 
-#### [concatMap](https://www.androidhuman.com/community/2016/02/08/gdg_korea_android_weekly_02_1/   )
+### [concatMap](https://www.androidhuman.com/community/2016/02/08/gdg_korea_android_weekly_02_1/   )
 ```typescript
 concatMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number) => O, resultSelector?: (outerValue: T, innerValue: ObservedValueOf<O>, outerIndex: number, innerIndex: number) => R): OperatorFunction<T, ObservedValueOf<O> | R>
 ```
@@ -11,7 +11,7 @@ concatMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: numbe
 
 ---
 
-#### mergeMap
+### mergeMap
 ```typescript
 mergeMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number) => O, resultSelector?: ((outerValue: T, innerValue: ObservedValueOf<O>, outerIndex: number, innerIndex: number) => R) | number, concurrent: number = Number.POSITIVE_INFINITY): OperatorFunction<T, ObservedValueOf<O> | R>
 ```
@@ -20,7 +20,7 @@ mergeMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number
 
 ---
 
-#### [pipe](https://feel5ny.github.io/2018/11/18/Async_04/)
+### [pipe](https://feel5ny.github.io/2018/11/18/Async_04/)
 ```typescript 
 pipe(...fns: Array<UnaryFunction<any, any>>): UnaryFunction<any, any> 
 // https://rxjs-dev.firebaseapp.com/api/index/function/pipe
@@ -42,7 +42,7 @@ of(1,2,3).pipe(
 
 ---
 
-#### debounceTime
+### debounceTime
 ```typescript
 debounceTime<T>(dueTime: number, scheduler: SchedulerLike = async): MonoTypeOperatorFunction<T>
 ```
@@ -59,6 +59,16 @@ Rx.Observable.fromEvent(input, 'keyup')
 `.debounceTime(300)`: `keyup` 이벤트가 발생했을 때 결과를 바로 제안하지 않고 300ms를 기다린 후 내놓습니다. 사용자가 300ms 이내에 새로운 것을 입력하면 타이머를 재설정합니다.
 - [설명 더 보기](https://medium.com/@jvdheijden/rxjs-throttletime-debouncetime-and-audittime-explained-in-examples-c393178458f3)
 
+
+---
+
+### from
+```typescript
+from<T>(input: ObservableInput<T>, scheduler?: SchedulerLike): Observable<T>
+  ```
+  Observable 형태로 변경해줍니다.
+- `from`을 이용해서 Observable로 만들 수 있는 형태
+  - arrays, maps, sets, promises, Dom nodes, and generator functions.
 
 ---
 
