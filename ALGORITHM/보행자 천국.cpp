@@ -1,49 +1,44 @@
+/*
+* 보행자 천국 DP
+* https://programmers.co.kr/learn/courses/30/lessons/1832
+*
+* @ddunny
+*/
 #include <vector>
-#include <iostream>
+#include <cstring>
 using namespace std;
 
-#define EMPTY 0 
-#define BLOCK 1
-#define ONELINE 2
-
 int MOD = 20170805;
-int dir[2][2] = { {0, 1},{1, 0} };
-int visit[500][500] = { 0, };
-int result = 0;
 
-void DFS(int nowy, int nowx, int m, int n, vector<vector<int>> city_map, int beforedir) {
-	if (nowy == m - 1 && nowx == n - 1) {
-		result += 1;
-		result %= MOD;
-		return;
-	}
-
-	if (nowy < 0 || nowx < 0 || nowy >= m || nowx >= n || visit[nowy][nowx] == 1 || city_map[nowy][nowx] == BLOCK) { // 못가는경우 
-		return;
-	}
-
-	visit[nowy][nowx] = 1;
-
-	int nexty, nextx;
-
-	if (city_map[nowy][nowx] == ONELINE) {
-		nexty = nowy + dir[beforedir][0];
-		nextx = nowx + dir[beforedir][1];
-		DFS(nexty, nextx, m, n, city_map, beforedir);
-		visit[nexty][nextx] = 0;
-	}
-	else { // EMPTY
-		for (int i = 0; i < 2; i++) {
-			nexty = nowy + dir[i][0];
-			nextx = nowx + dir[i][1];
-			DFS(nexty, nextx, m, n, city_map, i);
-			visit[nexty][nextx] = 0;
-		}
-	}
-}
+int right[501][501]; //오른쪽으로 갈 수있는 경우의 수
+int bottom[501][501]; // 아래쪽으로 갈 수있는 경우의 수
 
 // 전역 변수를 정의할 경우 함수 내에 초기화 코드를 꼭 작성해주세요.
 int solution(int m, int n, vector<vector<int>> city_map) {
-	DFS(0, 0, m, n, city_map, 0); // 무조건 0, 0 부터 시작한다.
-	return result;
+    // memset() : 초기화 작업
+    memset(right, 0, sizeof right); 
+    memset(bottom, 0, sizeof bottom);
+    right[1][1] = bottom[1][1] = 1;
+    
+    for (int i = 1; i <= m; i++) {   
+        for (int j = 1; j <= n; j++) {
+            if (i == 1 && j == 1) { // 위에서 이미 값 할당 마쳤기 때문에 보지 않음
+                continue;
+            }
+            if (city_map[i-1][j-1] == 0) {
+                right[i][j] = (right[i][j-1] + bottom[i-1][j]) % MOD;
+                bottom[i][j] = (right[i][j-1] + bottom[i-1][j]) % MOD;
+            }
+            else if (city_map[i-1][j-1] == 1) {
+                right[i][j] = 0;
+                bottom[i][j] = 0; 
+            }
+            else {
+                right[i][j] = right[i][j-1];
+                bottom[i][j] = bottom[i-1][j];                                
+            }
+        }
+    }
+    
+    return (right[m][n-1] + bottom[m-1][n]) % MOD;
 }
