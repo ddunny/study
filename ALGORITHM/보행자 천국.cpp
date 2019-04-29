@@ -36,7 +36,7 @@ void DFS(int nowy, int nowx, int m, int n, vector<vector<int>> city_map, int bef
 		for (int i = 0; i < 2; i++) {
 			nexty = nowy + dir[i][0];
 			nextx = nowx + dir[i][1];
-			DFS(nexty, nextx, m, n, city_map, beforedir);
+			DFS(nexty, nextx, m, n, city_map, i);
 			visit[nexty][nextx] = 0;
 		}
 	}
