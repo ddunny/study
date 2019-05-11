@@ -17,8 +17,7 @@ int stair[301] = { 0, };
 int memo[301] = { 0, };
 
 int max(int a, int b) {
-	int value;
-	return value = (a >= b) ? a : b;
+	return (a >= b) ? a : b;
 }
 
 int dp(int n) { // n : 마지막 계단
