@@ -1,7 +1,6 @@
 /*
-* https://programmers.co.kr/learn/courses/30/lessons/43165
-*
 * 타겟 넘버
+* https://programmers.co.kr/learn/courses/30/lessons/43165
 *
 * 생각해 볼 사항
 * 1.
@@ -39,19 +38,19 @@ void calculate(vector<int> list, int idx, int sum, int tgt) {
     // idx 가 list.size() 보다 작은 경우에 아래 작업을 수행한다.
     
     int value = list.at(idx);
-    sum += value; //해당 값을 더해본다.
-    idx++; //다음 값을 탐색해보아야 하므로 idx를 +1 해준다.
-    calculate(list, idx, sum, tgt);
+    //sum += value; //해당 값을 더해본다.
+    //idx++; //다음 값을 탐색해보아야 하므로 idx를 +1 해준다.
+    calculate(list, idx + 1, sum + value, tgt);
 
     /*더하는 작업을 테스트 마쳤으니 원상복귀 start*/
-    sum -= value;
-    idx--; 
+    // sum -= value;
+    // idx--; 
     /*더하는 작업을 테스트 마쳤으니 원상복귀 end*/
     
 
-    sum -= value; //해당 값을 빼본다.
-    idx++; //다음 값을 탐색해보아야 하므로 idx를 +1 해준다.
-    calculate(list, idx, sum, tgt);
+    //sum -= value; //해당 값을 빼본다.
+    //idx++; //다음 값을 탐색해보아야 하므로 idx를 +1 해준다.
+    calculate(list, idx + 1, sum - value, tgt);
 }
 
 int solution(vector<int> numbers, int target) {
