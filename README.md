@@ -12,6 +12,7 @@
 - [ionic serve refresh error 해결하기](https://github.com/ddunny/memo/blob/master/IONIC/ionic%20serve%20refresh%20error%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md)   
 - [IONIC CLI로 앱 실행해보기](https://github.com/ddunny/memo/blob/master/IONIC/IONIC%20CLI%EB%A1%9C%20%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0.md)   
 - [inputbox 클릭했을 때 키보드 숨기기](https://github.com/ddunny/memo/blob/master/IONIC/inputbox%20%ED%81%B4%EB%A6%AD%ED%96%88%EC%9D%84%20%EB%95%8C%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EC%88%A8%EA%B8%B0%EA%B8%B0.md)   
+- [RxJS 활용 사례](https://github.com/ddunny/memo/blob/master/IONIC/ANGULAR/RxJS%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC%20%ED%86%B5%EC%8B%A0%20%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0.md)
 
 ## 자바스크립트
 - [npm install 옵션 알아보기](https://github.com/ddunny/memo/blob/master/JAVASCRIPT/npm%20install%20%EC%98%B5%EC%85%98%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)
