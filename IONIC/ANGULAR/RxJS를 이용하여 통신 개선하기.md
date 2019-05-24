@@ -140,6 +140,8 @@ take(): 원하는 만큼 다시 실행하기 위해서 사용 [*take(4) : 4번 �
 tap(): 흐름을 제어하기 위해서 사용 [ex.503이 아닌 경우 재시도 안하고 끝내기]
 ```
 
+[more](https://stackoverflow.com/questions/44979131/rxjs-retry-with-delay-function)
+
 ---
 
 포스팅에 사용한 함수명, 변수명은 포스팅용입니다. 실무에 사용한 이름은 아닙니다.:hand:
