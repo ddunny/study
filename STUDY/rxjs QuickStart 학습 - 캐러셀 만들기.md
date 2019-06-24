@@ -1,24 +1,32 @@
 캐러셀 만들기 (RxJS Quick Start 학습 내용)
 ===
 
-**getElementsByClassName VS querySelector**
+**querySelector vs querySelectorAll vs getElementsByClassName**
 ---
 
-예전에 클래스에 접근할 때 getElementsByClassName 사용하기도 했었다. 교재에서는 querySelector를 이용하여 클래스에 접근해서 차이점이 궁금했다.  
+- **document.querySelector**
+  - 노드의 서브트리에서 매칭되는 첫번째 노드의 값을 반환한다. 만약 매칭되는 노드가 없으면 null을 반환한다.
 
-### 답
+- **document.querySelectorAll**
+  - 노드의 서브트리 내에서 매칭되는 모든 요소를 포함한 노드리스트를 반환하고, 매칭되는 것이 없다면 빈 노드리스트를 반환한다.
 
-- **document.getElementsByClassName**
-  - a HTMLCollection is returned. This list is a LIVE list*.
-  - you can just define a class.
-  - querySelector can be a complete CSS(3)-Selector with IDs and Classes and Pseudo-Classes
+- **querySelector && querySelectorAll**
+  - querySelector(), querySelectorAll()로 **생성된 순간**의 셀렉터들로 채워진 요소들을 포함한다. (이 값은 변하지 않는다.)
+  - They can be a complete CSS(3)-Selector with IDs and Classes and Pseudo-Classes
     - `#id.class:pseudo`
     - `tag #id .class .class.class`
 
-- **document.querySelector**
-  - a NodeList is returned. This is NOT a live list but is instead a STATIC list* (ie. it should not change).
+- **document.getElementsByClassName**
+  - getElementsByClassName()로 생성된 변수는 사용되었을 때의 셀렉터들로 채워진 요소들을 포함한다. (함수가 처음 불렸을 때의 값과 다를 수 있다.)
 
-[참고]
+```javascript
+var aux1 = document.querySelectorAll(".blue"); // .blue is HTML DOM
+var aux2 = document.getElementsByClassName("blue"); // blue is just class name
+```
+
+> [querySelectorAll(STATIC)과 getElementsByClassName(LIVE) 차이를 보여주는 코드](https://stackoverflow.com/a/39213298)  
+
+**[참고]**
 
 - [medium 포스팅](https://medium.com/@abi_travers_/an-issue-you-may-not-have-noticed-with-givenelement-classlist-bitesize-js-4685d803ae)
 - [스택오버플로우](https://stackoverflow.com/questions/14377590/queryselector-and-queryselectorall-vs-getelementsbyclassname-and-getelementbyid)
