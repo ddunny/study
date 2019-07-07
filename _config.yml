@@ -17,16 +17,21 @@ title: Sunny의 blog
 email: jjohye11@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   개발을 기록하는 공간
-baseurl: "/docs" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://ddunny.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+production_url: https://ddunny.github.io/
 # twitter_username: jekyllrb
 github_username:  ddunny
+
+branch: master
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+  
 
 # Exclude from processing.ç
 # The following items will not be processed, by default. Create a custom list
