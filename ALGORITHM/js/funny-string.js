@@ -1,6 +1,6 @@
 /**
  * Funny String
- * https: //www.hackerrank.com/challenges/funny-string/problem
+ * https://www.hackerrank.com/challenges/funny-string/problem
  *
  * 문자열에 포함된 알파벳의 아스키코드 차 (=n번째 자리와 n+1번째 자리의 알파벳 아스키코드 차이)가 역으로 해도 같은 경우 "Funny" 출력
  * 

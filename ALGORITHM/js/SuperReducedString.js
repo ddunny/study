@@ -1,6 +1,6 @@
 /**
  * Super Reduced String
- * https: //www.hackerrank.com/challenges/reduced-string/problem
+ * https://www.hackerrank.com/challenges/reduced-string/problem
  *
  * a. 2개가 연달아 있을 경우, 연달아있는 알파벳을 지워야 함
  * 위 과정을 반복해나가는 것
