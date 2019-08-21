@@ -10,7 +10,7 @@
    // arr : 아이스크림의 가격
    // 규칙: 둘은 같은 제품을 중복해서 사지 않는다.
     for (let i = 0; i < arr.length; i++) {
-      for (let j = 0; j <= arr.length; j++) {
+      for (let j = i + 1; j <= arr.length; j++) {
         if (arr[i] + arr[j] === m && i !== j) {
           return [i + 1, j + 1];
         }
