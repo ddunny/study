@@ -16,17 +16,20 @@ function makingAnagrams(s1, s2) {
   let arr1 = [];
   let arr2 = [];
 
-  for (let idx in size) {
-    if (idx < s1.length) { // excute
-      arr1[s1.charCodeAt(idx)] += 1;
-    }
-
-    if (idx < s2.length) { // excute
-      arr2[s2.charCodeAt(idx)] += 1;
-    }
+  for (let i = 0; i <= 25; i++) {
+    arr1[i] = 0;
+    arr2[i] = 0;
   }
 
-  console.log(`arr1 ${arr1} / arr2 ${arr2}`);
+  for (let i = 0; i < size; i++) {
+    if (i < s1.length) arr1[s1.charCodeAt(i) - 97] += 1;
+    if (i < s2.length) arr2[s2.charCodeAt(i) - 97] += 1;
+  }
 
-  return [];
-}
+  let count = 0;
+  for (let i = 0; i <= 25; i++) {
+    count += Math.abs(arr1[i] - arr2[i]);
+  }
+
+  return count;
+  }
