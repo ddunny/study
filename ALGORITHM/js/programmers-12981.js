@@ -12,7 +12,7 @@ function solution(n, words) {
 
   for (let idx = 0; idx < words.length - 1; idx++) {
     let now = idx + 1;
-    let calcNum = idx + 2; // 답을 출력하기 위해 위치 재정의
+    let calcNum = now + 1; // 답을 출력하기 위해 위치 재정의
 
     // 끌말잇기가 이루어지지 않은 경우
     if (words[idx].slice(-1) !== words[now].split("")[0]) {
