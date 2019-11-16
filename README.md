@@ -1,10 +1,17 @@
 # { ☀️'s 개발 기록}
 
+
+
 ## 소개
+
 > 개발하면서 겪었던 에러들을 어떻게 해결했는지 공유도 하고, 공부하는 내용들을 기록도 하는 페이지입니다. 😉
+>
+> 최종업데이트: 2019-11-17
+
+
 
 # 목차
-> 지금까지 저장한 내용들입니다 👍
+
 
 ## IONIC (하이브리드앱)
 - [인앱브라우저 안의 SELECT BOX 옵션 보이게 하기](IONIC/%EC%9D%B8%EC%95%B1%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%95%88%EC%9D%98%20SELECT%20BOX%20%EC%98%B5%EC%85%98%20%EB%B3%B4%EC%9D%B4%EA%B2%8C%20%ED%95%98%EA%B8%B0.md)   
@@ -14,16 +21,30 @@
 - [inputbox 클릭했을 때 키보드 숨기기](IONIC/inputbox%20%ED%81%B4%EB%A6%AD%ED%96%88%EC%9D%84%20%EB%95%8C%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EC%88%A8%EA%B8%B0%EA%B8%B0.md)   
 - [RxJS 활용 사례](IONIC/ANGULAR/RxJS%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC%20%ED%86%B5%EC%8B%A0%20%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0.md)
 
+### ANGULAR
+
+- [RxJS를 이용하여 통신 개선하기.md](IONIC\ANGULAR\RxJS를 이용하여 통신 개선하기.md)
+
+
+
 ## 자바스크립트
+
 - [npm install 옵션 알아보기](JAVASCRIPT/npm%20install%20%EC%98%B5%EC%85%98%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)
 - [textContent vs innerText](JAVASCRIPT/textContent%EC%99%80%20innerText.md)
 - [RxJS 학습](JAVASCRIPT/RxJS%20%ED%95%99%EC%8A%B5.md)
+- [배열 중복 요소 제거하기](JAVASCRIPT\배열 중복 요소 제거.md)
+- [정렬](JAVASCRIPT\정렬하기.md)
+
+
 
 ## PHP
-- [mysql_close()는 꼭 필요할까?](PHP/mysql_close()%EA%B0%80%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80.md)  
+- [mysql_close()는 꼭 필요할까?](PHP/mysql_close()%EA%B0%80%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80.md)   
 - [PDO 적용기](PHP/PDO%20적용기.md)
 
-## 알고리즘
+
+
+## 알고리즘 문제풀이
+### CPP
 - [미로탐색](ALGORITHM/cpp/%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.cpp)   
 - [토마토](ALGORITHM/cpp/%ED%86%A0%EB%A7%88%ED%86%A0.cpp)     
 - [숨바꼭질](ALGORITHM/cpp/%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.cpp)   
@@ -48,5 +69,34 @@
 - [2xn타일링](ALGORITHM/cpp/2xn%ED%83%80%EC%9D%BC%EB%A7%81.cpp)
 - [123더하기](ALGORITHM/cpp/123%EB%8D%94%ED%95%98%EA%B8%B0.cpp)
 
-## git
+### javascript
+
+- [Funny String](ALGORITHM\js\funny-string.js)
+- [HackerRank in a String!](ALGORITHM\js\hackerrank-in-a-string.js)
+- [Ice Cream Parlor](ALGORITHM\js\icecream-parlor.js)
+- [Insertion Sort - Part 1](ALGORITHM\js\insertionsort1.js)
+- [Day 7: Regular Expressions I](ALGORITHM\js\js10-regexp-1.js)
+- [Kangaroo](ALGORITHM\js\kangaroo.js)
+- [Making Anagrams](ALGORITHM\js\making-anagrams.js)
+- [Pangrams](ALGORITHM\js\Pangrams.js)
+- [영어 끝말잇기](ALGORITHM\js\programmers-12981.js)
+- [베스트앨범](ALGORITHM\js\programmers-42579.js)
+- [탑](ALGORITHM\js\programmers-42588.js)
+- [가장 큰 수](ALGORITHM\js\programmers-42746.js)
+- [H-Index](ALGORITHM\js\programmers-42747.js)
+- [K번째수](ALGORITHM\js\programmers-42748.js)
+- [체육복](ALGORITHM\js\programmers-42862.js)
+- [오픈채팅방](ALGORITHM\js\programmers-42888.js)
+- [Super Reduced String](ALGORITHM\js\SuperReducedString.js)
+
+
+
+## GIT
 - [merge request 로컬에서 작업하기](GIT/gitlab%EC%9D%98%20merge%20request%EB%A5%BC%20%EB%A1%9C%EC%BB%AC%EB%A1%9C%20%EB%B6%88%EB%9F%AC%EC%99%80%EC%84%9C%20%EC%9E%91%EC%97%85%ED%95%98%EA%B8%B0.md)     
+
+
+
+## STUDY
+
+- [rxjs QuickStart 학습 - 캐러셀 만들기](STUDY\rxjs QuickStart 학습 - 캐러셀 만들기.md)
+
