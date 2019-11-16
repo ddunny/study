@@ -20,7 +20,8 @@
 - [RxJS 학습](JAVASCRIPT/RxJS%20%ED%95%99%EC%8A%B5.md)
 
 ## PHP
-- [mysql_close()는 꼭 필요할까?](PHP/mysql_close()%EA%B0%80%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80.md)   
+- [mysql_close()는 꼭 필요할까?](PHP/mysql_close()%EA%B0%80%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80.md)  
+- [PDO 적용기](PHP/PDO%20적용기.md)
 
 ## 알고리즘
 - [미로탐색](ALGORITHM/cpp/%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.cpp)   
