@@ -1,5 +1,7 @@
 /** 
+ * 큰 수 만들기
  * https://programmers.co.kr/learn/courses/30/lessons/42883
+ * - 통과하지 못한 문제 (시간초과)
  * 
  * @ddunny
 */
