@@ -33,7 +33,7 @@
 - [textContent vs innerText](JAVASCRIPT/textContent%EC%99%80%20innerText.md)
 - [RxJS 학습](JAVASCRIPT/RxJS%20%ED%95%99%EC%8A%B5.md)
 - [배열 중복 요소 제거하기](JAVASCRIPT/배열%20중복%20요소%20제거.md)
-- [정렬](JAVASCRIPT\정렬하기.md)
+- [정렬](JAVASCRIPT/정렬하기.md)
 
 
 
@@ -71,24 +71,24 @@
 
 ### javascript
 
-- [Funny String](ALGORITHM\js\funny-string.js)
-- [HackerRank in a String!](ALGORITHM\js\hackerrank-in-a-string.js)
-- [Ice Cream Parlor](ALGORITHM\js\icecream-parlor.js)
-- [Insertion Sort - Part 1](ALGORITHM\js\insertionsort1.js)
-- [Day 7: Regular Expressions I](ALGORITHM\js\js10-regexp-1.js)
-- [Kangaroo](ALGORITHM\js\kangaroo.js)
-- [Making Anagrams](ALGORITHM\js\making-anagrams.js)
-- [Pangrams](ALGORITHM\js\Pangrams.js)
-- [영어 끝말잇기](ALGORITHM\js\programmers-12981.js)
-- [베스트앨범](ALGORITHM\js\programmers-42579.js)
-- [탑](ALGORITHM\js\programmers-42588.js)
-- [가장 큰 수](ALGORITHM\js\programmers-42746.js)
-- [H-Index](ALGORITHM\js\programmers-42747.js)
-- [K번째수](ALGORITHM\js\programmers-42748.js)
-- [체육복](ALGORITHM\js\programmers-42862.js)
-- [오픈채팅방](ALGORITHM\js\programmers-42888.js)
-- [Super Reduced String](ALGORITHM\js\SuperReducedString.js)
-- [소수 찾기](ALGORITHM\js\programmers-12921.js)
+- [Funny String](ALGORITHM/js/funny-string.js)
+- [HackerRank in a String!](ALGORITHM/js/hackerrank-in-a-string.js)
+- [Ice Cream Parlor](ALGORITHM/js/icecream-parlor.js)
+- [Insertion Sort - Part 1](ALGORITHM/js/insertionsort1.js)
+- [Day 7: Regular Expressions I](ALGORITHM/js/js10-regexp-1.js)
+- [Kangaroo](ALGORITHM/js/kangaroo.js)
+- [Making Anagrams](ALGORITHM/js/making-anagrams.js)
+- [Pangrams](ALGORITHM/js/Pangrams.js)
+- [영어 끝말잇기](ALGORITHM/js/programmers-12981.js)
+- [베스트앨범](ALGORITHM/js/programmers-42579.js)
+- [탑](ALGORITHM/js/programmers-42588.js)
+- [가장 큰 수](ALGORITHM/js/programmers-42746.js)
+- [H-Index](ALGORITHM/js/programmers-42747.js)
+- [K번째수](ALGORITHM/js/programmers-42748.js)
+- [체육복](ALGORITHM/js/programmers-42862.js)
+- [오픈채팅방](ALGORITHM/js/programmers-42888.js)
+- [Super Reduced String](ALGORITHM/js/SuperReducedString.js)
+- [소수 찾기](ALGORITHM/js/programmers-12921.js)
 
 
 
