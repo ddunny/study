@@ -88,6 +88,7 @@
 - [체육복](ALGORITHM\js\programmers-42862.js)
 - [오픈채팅방](ALGORITHM\js\programmers-42888.js)
 - [Super Reduced String](ALGORITHM\js\SuperReducedString.js)
+- [소수 찾기](ALGORITHM\js\programmers-12921.js)
 
 
 
