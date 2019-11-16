@@ -23,7 +23,7 @@
 
 ### ANGULAR
 
-- [RxJS를 이용하여 통신 개선하기.md](IONIC\ANGULAR\RxJS를%20이용하여%20통신%20개선하기.md)
+- [RxJS를 이용하여 통신 개선하기.md](IONIC/ANGULAR/RxJS를%20이용하여%20통신%20개선하기.md)
 
 
 
@@ -32,7 +32,7 @@
 - [npm install 옵션 알아보기](JAVASCRIPT/npm%20install%20%EC%98%B5%EC%85%98%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)
 - [textContent vs innerText](JAVASCRIPT/textContent%EC%99%80%20innerText.md)
 - [RxJS 학습](JAVASCRIPT/RxJS%20%ED%95%99%EC%8A%B5.md)
-- [배열 중복 요소 제거하기](JAVASCRIPT\배열%20중복%20요소%20제거.md)
+- [배열 중복 요소 제거하기](JAVASCRIPT/배열%20중복%20요소%20제거.md)
 - [정렬](JAVASCRIPT\정렬하기.md)
 
 
@@ -98,5 +98,5 @@
 
 ## STUDY
 
-- [rxjs QuickStart 학습 - 캐러셀 만들기](STUDY\rxjs%20QuickStart%20학습%20-%20캐러셀%20만들기.md)
+- [rxjs QuickStart 학습 - 캐러셀 만들기](STUDY/rxjs%20QuickStart%20학습%20-%20캐러셀%20만들기.md)
 
