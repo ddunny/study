@@ -89,6 +89,8 @@
 - [오픈채팅방](ALGORITHM/js/programmers-42888.js)
 - [Super Reduced String](ALGORITHM/js/SuperReducedString.js)
 - [소수 찾기](ALGORITHM/js/programmers-12921.js)
+- [프린터](ALGORITHM/js/programmers-42587.js)
+- [같은 숫자는 싫어](ALGORITHM/js/programmers-12906.js)
 
 
 
