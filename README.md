@@ -91,6 +91,11 @@
 - [소수 찾기](ALGORITHM/js/programmers-12921.js)
 - [프린터](ALGORITHM/js/programmers-42587.js)
 - [같은 숫자는 싫어](ALGORITHM/js/programmers-12906.js)
+- [자연수 뒤집어 배열로 만들기](ALGORITHM/js/programmers-12932.js)
+- [자릿수 더하기](ALGORITHM/js/programmers-12931.js)
+- [나누어 떨어지는 숫자 배열](ALGORITHM/js/programmers-12910.js)
+- [스킬트리](ALGORITHM/js/programmers-49993.js)
+- [124 나라의 숫자](ALGORITHM/js/programmers-12899.js)
 
 
 
