@@ -96,6 +96,8 @@
 - [나누어 떨어지는 숫자 배열](ALGORITHM/js/programmers-12910.js)
 - [스킬트리](ALGORITHM/js/programmers-49993.js)
 - [124 나라의 숫자](ALGORITHM/js/programmers-12899.js)
+- [HackerRank in a String!](ALGORITHM/js/hackerrank-sherlock-and-valid-string.js)
+- [Insert a node at a specific position in a linked list](ALGORITHM/js/insert-a-node-at-a-specific-position-in-a-linked-list.js)
 
 
 
