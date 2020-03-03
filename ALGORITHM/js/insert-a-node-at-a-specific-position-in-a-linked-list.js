@@ -13,7 +13,6 @@
     while (1) {
         if (nowIndex === position) break; // 삽입할 위치가 왔습니다.
         preNode = current;
-        console.log(`preNode: ${JSON.stringify(preNode)}`);
         current = current.next;
         nowIndex++;
     }
