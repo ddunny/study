@@ -1,6 +1,6 @@
 /**
- * HackerRank in a String!
- * https://www.hackerrank.com/challenges/hackerrank-in-a-string/problem
+ * Sherlock and the Valid String
+ * https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem
  * 
  @ddunny
  */
