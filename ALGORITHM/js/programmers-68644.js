@@ -14,5 +14,5 @@ function solution(numbers) {
         }
     }
     
-    return Array.from(new Set(answer)).sort((a,b)=>a-b);
+    return [...new Set(answer)].sort((a,b)=> a - b);
 }
