@@ -5,11 +5,13 @@
  * @ddunny
 */
 function solution(begin, target, words) {
-    if (!words.includes(target)) return 0;
+    if (!words.includes(target)) {
+        return 0;
+    };
     let queue = [];
     let visited = [];
     const getDiff = (a, b) => a.split("").reduce((cnt, curValue, curIndex) => cnt + (curValue !== b[curIndex]), 0);
-    
+
     queue.push(begin);
     visited[begin] = 0; // 방문처리
 
@@ -19,7 +21,7 @@ function solution(begin, target, words) {
         if (cur === target) {
             return visited[cur];
         }
-        
+
         for (const word of words) {
             if (getDiff(cur, word) === 1 && visited[word] === undefined) {
                 queue.push(word);
@@ -27,6 +29,6 @@ function solution(begin, target, words) {
             }
         } 
     }
-    
+
     return 0;
 }
