@@ -6,7 +6,7 @@
 
 > 개발하면서 겪었던 에러들을 어떻게 해결했는지 공유도 하고, 공부하는 내용들을 기록도 하는 페이지입니다. 😉
 >
-> 최종업데이트: 2020-11-07
+> 최종업데이트: 2020-11-08
 
 
 
@@ -101,7 +101,8 @@
 - [Insert a node at a specific position in a linked list](https://github.com/ddunny/study/blob/master/ALGORITHM/js/insert-a-node-at-a-specific-position-in-a-linked-list.js)  
 - [두 개 뽑아서 더하기](https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-68644.js)
 - [단어 변환](https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-43163.js)  
-- [이중우선순위큐](https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-42628.js)
+- [이중우선순위큐](https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-42628.js)  
+- [[3차]자동 완성](https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-17685.js)
 
 
 ## GIT
