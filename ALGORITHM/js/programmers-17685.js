@@ -44,7 +44,6 @@ function solution(words) {
         }
         parentNode = parentNode.child[char];
       } else {
-        console.log("child 에서 찾을 수 없습니다. word: ", word);
         return 0;
       }
     }
