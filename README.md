@@ -40,7 +40,7 @@
 ## PHP
 - [mysql_close()는 꼭 필요할까?](https://github.com/ddunny/study/blob/master/PHP/mysql_close()%EA%B0%80%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80.md)   
 - [PDO 적용기](https://github.com/ddunny/study/blob/master/PHP/PDO%20적용기.md)
-
+- [PHP7 Throwable](https://github.com/ddunny/study/blob/master/PHP/PHP7%20Throwable.md)
 
 
 ## 알고리즘 문제풀이
