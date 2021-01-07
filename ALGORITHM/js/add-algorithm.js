@@ -1,4 +1,5 @@
 // 덧셈알고리즘 풀이 (큰수더하기)
+// 문제 예제는 백준 큰수 A+B 참고
 
 function answer(a,b) {
   if (a.length > b.length) {
