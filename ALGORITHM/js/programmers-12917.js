@@ -11,10 +11,7 @@ function solution(s) {
 
   answer = s
     .split("")
-    .sort((a, b) => {
-      if (a.charCodeAt(0) === b.charCodeAt(0)) return 0;
-      return a.charCodeAt(0) < b.charCodeAt(0) ? 1 : -1;
-    })
+    .sort((a, b) => (a > b ? -1 : 1))
     .join("");
   return answer;
 }
