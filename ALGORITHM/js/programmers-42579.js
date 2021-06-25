@@ -1,95 +1,46 @@
-/**
- * 베스트앨범
- * https://programmers.co.kr/learn/courses/30/lessons/42579
- *
- * 26.7점짜리 코드
- *  - 어디가 틀린건지 모르겠다..
- * 
- * 점검한 테스트케이스
- * ["classic", "pop", "classic", "classic", "pop"]
- * [650, 600, 150, 650, 2500]
- * [4, 1, 0, 3]
- * 
- * ["classic", "classic", "classic", "classic", "pop"]
- * [100, 100, 100, 100, 1000]
- * [4, 0, 1]
- * 
- * ["classic", "pop", "classic", "pop", "classic", "classic"]
- * [400, 600, 150, 2500, 500, 500]
- * [3, 1, 4, 5]
- * 
- @ddunny
- */
+// 베스트앨범
+// https://programmers.co.kr/learn/courses/30/lessons/42579
+
 function solution(genres, plays) {
-    let streaming = new Map();
-    let popular = new Map();
+  let playSumList = new Map();
+  let list = genres
+    .map((v, i) => {
+      let sum = playSumList.get(v);
+      if (!sum) {
+        playSumList.set(v, plays[i]);
+      } else {
+        playSumList.delete(v);
+        playSumList.set(v, plays[i] + sum * 1);
+      }
+      return { genre: v, play: plays[i], index: i };
+    })
+    .sort((a, b) => {
+      return a.play > b.play ? -1 : 1;
+    });
 
-    for (let i = 0; i < genres.length; i++) {
-        let stream = streaming.get(genres[i]); // 플레이횟수 저장
-        if (stream !== undefined) {
-            stream += plays[i];
-            streaming.set(genres[i], stream);
-        } else {
-            streaming.set(genres[i], plays[i]);
-        }
-
-        let popular_play = popular.get(genres[i]);
-
-        if (popular_play !== undefined) {
-            let last_item = popular_play[popular_play.length - 1];
-            if (last_item.play < plays[i]) {
-                // 장르 내에서 많이 재생된 노래를 먼저 수록
-                // 장르별로 2개씩 출시하므로 popular_play의 길이는 2로 유지
-                if (popular_play.length === 1) {
-                    popular_play.unshift({
-                        index: i,
-                        play: plays[i]
-                    });
-                } else if (popular_play.length === 2) {
-                    if (popular_play[0].play < plays[i]) {
-                        popular_play.shift();
-                        popular_play.unshift({
-                            index: i,
-                            play: plays[i]
-                        });
-                    } else {
-                        popular_play.pop();
-                        popular_play.push({
-                            index: i,
-                            play: plays[i]
-                        });
-                    }
-                }
-            } else if (last_item.play === plays[i] && popular_play.length === 1) {
-                // 장르 내에서 재생횟수가 같은 노래 중에서는 고유 번호가 낮은 노래를 먼저 수록합니다.
-                popular_play.push({
-                    index: i,
-                    play: plays[i]
-                });
-            }
-            popular.set(genres[i], popular_play);
-        } else {
-            let item = [];
-            item.push({
-                index: i,
-                play: plays[i]
-            });
-            popular.set(genres[i], item);
-        }
-    }
-
-    const streamingSorted = new Map([...streaming].sort((a, b) => b[1] - a[1])); // 내림차순 정렬
-    let streamingCount = 0;
-    let result = [];
-    for (let item of streamingSorted) {
-        let info = popular.get(item[0]);
-        for (let m of info) {
-            result.push(m.index);
-            streamingCount++;
-            if (streamingCount === 2) break; // 장르별로 2곡씩 수록되어야 함
-        }
-        streamingCount = 0;
-    }
-
-    return result;
+  return Array.from(playSumList)
+    .sort((a, b) => (a[1] < b[1] ? 1 : -1))
+    .reduce((acc, v) => {
+      acc = [...acc, ...list.filter((item) => item.genre === v[0]).slice(0, 2)];
+      return acc;
+    }, [])
+    .map((v) => v.index);
 }
+
+/**
+  테스트 1 〉	통과 (0.25ms, 30.2MB)
+  테스트 2 〉	통과 (0.26ms, 29.9MB)
+  테스트 3 〉	통과 (0.25ms, 30MB)
+  테스트 4 〉	통과 (0.21ms, 30.1MB)
+  테스트 5 〉	통과 (0.49ms, 30.2MB)
+  테스트 6 〉	통과 (0.41ms, 30.2MB)
+  테스트 7 〉	통과 (0.39ms, 30.1MB)
+  테스트 8 〉	통과 (0.34ms, 30MB)
+  테스트 9 〉	통과 (0.26ms, 30.2MB)
+  테스트 10 〉	통과 (0.53ms, 30MB)
+  테스트 11 〉	통과 (0.28ms, 30MB)
+  테스트 12 〉	통과 (0.37ms, 30MB)
+  테스트 13 〉	통과 (0.45ms, 30.2MB)
+  테스트 14 〉	통과 (0.45ms, 30.2MB)
+  테스트 15 〉	통과 (0.27ms, 29.8MB)
+   */
