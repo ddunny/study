@@ -136,8 +136,9 @@
 | 로또의 최고 순위와 최저 순위                          | https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-77484.js                                     |
 | 약수의 개수와 덧셈                                    | https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-77884.js                                     |
 | 2개 이하로 다른 비트                                  | https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-77885.js                                     |
-|                                                       |                                                                                                                   |
-|                                                       |                                                                                                                   |
+| 직업군 추천하기                                       | https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-84325.js                                     |
+| Same Tree                                             | https://github.com/ddunny/study/blob/master/ALGORITHM/js/leetcode-same-tree.js                                    |
+| 모음 사전                                             | https://github.com/ddunny/study/blob/master/ALGORITHM/js/programmers-84512.js                                     |
 
 ## GIT
 
